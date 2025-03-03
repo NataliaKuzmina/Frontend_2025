@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    /* background-color: blanchedalmond; */
+    font-size: 100%;
+}
+
+.element {
+    display: inline-block;
+    width: 600px;
+    /* margin: 50px; */
+}
+
+.card {
+    border: solid 2px;
+    width: 150px;
+    height: 200px;
+    margin: 50px 50px 50px 250px;
+    position: absolute;
+    
+}
+
+.list {
+    border: solid 2px;
+    width: 556px;
+    height: 200px;
+    margin: 38px 550px;
+    position: absolute;
+}
+
+li {
+    margin: 35px 0;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+}
+
+table {
+    position: absolute;
+    border: 2px solid black;
+    width: 900px;
+    height: auto;
+    margin: 300px 250px;
+}
+
+th {
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+}
+
+td {
+    border: 2px solid black;
+    padding: auto;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+p {
+    position: absolute;
+    margin: 600px 255px 0 250px;
+    width: 900px;
+}
+
+a {
+    position: absolute;
+    margin: 750px 0 0 1030px;
+}
