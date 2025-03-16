@@ -8,49 +8,63 @@
   </head>
   <body>
     <div class="box">
-      <div class="element card">1</div>
-      <div class="element">
-        <ul class="list">
-          <li>
-            <span>Кузьмина Наталья Борисовна
-            </span>
-          </li>
-          <li>
-            <span>18 лет</span>
-          </li>
-          <li>
-            <span>г.Москва</span>
-          </li>
-        </ul>
-      </div>
-      <table>
-        <thead>
-          <tbody>
-            <th>Number</th>
-            <th>Name</th>
-            <th>Ag</th>
-          </tbody>
-          <tbody>
-            <td>1</td>
-            <td>Наташа</td>
-            <td>30</td>
-          </tbody>
-          <tbody>
-            <td>2</td>
-            <td>Марина</td>
-            <td>10</td>
-          </tbody>
-          <tbody>
-            <td>3</td>
-            <td>Света</td>
-            <td>46</td>
-          </tbody>
-        </thead>
-      </table>
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque asperiores delectus doloremque, incidunt quibusdam fugiat ab sit fuga nesciunt facere nemo error quis molestiae assumenda quaerat dignissimos praesentium unde excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laboriosam, et accusamus esse error vero quod cumque a deleniti atque similique sapiente voluptates earum. Ipsam at perferendis eligendi sed vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto ipsam possimus voluptas, voluptatibus tempora porro, illum consequatur exercitationem nisi facilis accusantium, fugiat earum quam dignissimos velit sit! Vel, magnam.</p>
-      </div>
-      <a href="https://ya.ru/?ysclid=m7qetbufar135583245">Ссылка на яндекс</a>
+      <h1>
+        Правила организации отступов: как сделать вёрстку гибкой и не допустить
+        ошибок
+      </h1>
+
+      <p>
+        Вёрстка должна быть <strong>максимально гибкой</strong>. Даже если
+        заказчик или работодатель говорит, что сайт статичный и не будет
+        меняться, всё равно стоит делать так, будто завтра добавят несколько
+        блоков текста, несколько элементов или что-то ещё.
+      </p>
+
+      <p>
+        Нужно точно знать,
+        <em
+          >как поведут себя блоки при вёрстке, что произойдёт при изменениях</em
+        >. И здесь помогают правила организации отступов. Они позволяют легко
+        менять, улучшать и масштабировать вёрстку и уберегут вас от типичных
+        ошибок.
+      </p>
+
+      <h2>Содержание</h2>
+
+      <p>
+        Первая из частей - HTML. Это начальная стадия соблюдения кодстайла, ведь
+        любой сайт вы начинаете писать именно с этого языка. Давайте посмотрим
+        на основные правила:
+      </p>
+
+      <ul>
+        <li>Основные принципы работы с отступами</li>
+        <li>Первый принцип: отступы от предыдущего к следующему</li>
+        <li>Второй принцип: отступы задаются только между соседями</li>
+        <li>Третий принцип: у последнего элемента группы обнуляем отступ</li>
+      </ul>
+
+      <h3>Основные принципы работы с отступами</h3>
+
+      <p>
+        У любого сайта или документа есть так называемый поток — порядок вывода
+        объектов в документе. В вёрстке этот поток идёт сверху вниз, слева
+        направо. Именно поэтому, если какой-то элемент на макете находится
+        справа, он должен в HTML-коде идти последним из своей группы.
+      </p>
+
+      <p>Исходя из этого, можно сразу сформулировать первый принцип.</p>
+
+      <h3>Отступы задаются от предыдущего элемента к следующему</h3>
+
+      <p>
+        Это значит, что в вёрстке нужно стараться использовать CSS-свойства
+        <strong>margin-right</strong> и <strong>margin-bottom</strong>, то есть
+        отступ справа и отступ снизу. Проще говоря - избегаем отступов слева и
+        сверху полностью.
+      </p>
+      <q>12</q>
+      <button>1</button>
     </div>
   </body>
 </html>
