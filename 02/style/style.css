@@ -1,4 +1,52 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(238, 238, 234);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    background: rgb(138, 129, 146);
+
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left {
+    display: flex;
+}
+
+.header-logo {
+    width: 261px;
+    height: 54px;
+}
+
+.header-phone {
+    width: 173px;
+    height: 20px;
+    margin-left: 40px;
+    /* padding: 17px 0; */
+}
+
+.header-top-right {
+    width: 155px;
+    height: 24px;
+    /* padding: 17px 0; */
+}
+
+.header-nav {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.header-list {
+    display: flex;
+ 
+    
 }
