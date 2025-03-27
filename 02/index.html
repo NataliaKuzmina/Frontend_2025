@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lagoona</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container-offset">
       <div class="container">
-        <div class="header-top">
-          <div class="header-top-left">
+        <div class="header-top flex">
+          <div class="header-top-left flex">
             <a href="#" class="header-logo">
               <img src="./img/logo.svg" class="header-logo" alt="Lagoona" />
             </a>
@@ -19,15 +20,15 @@
             >
           </div>
 
-          <div class="header-top-right">
+          <div class="header-top-right flex">
             <img src="./img/keyboard_tab.svg" alt="exit" />
             <a class="btn-link header-btn-account" href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-list">
+        <nav class="header-nav flex">
+          <ul class="header-list list-reset flex">
             <li class="header-list-item">
               <a href="#about-us" class="header-link"> О нас </a>
             </li>
@@ -48,7 +49,7 @@
             </li>
           </ul>
 
-          <div class="header-nav-links">
+          <div class="header-nav-links flex">
             <button class="btn header-btn">Хочу тур</button>
             <button class="btn header-btn">Обратный звонок</button>
           </div>
@@ -58,19 +59,18 @@
 
     <main>
       <!-- Секция Спецпредложения -->
-      <section id="special" class="special">
+      <section id="special" class="special container-offset">
         <div class="container">
           <h2 class="title">Спецпредложения</h2>
-
-          <div class="special-cards-container">
-            <div class="special-cards-left">
-              <div class="special-box">
+          <div class="special-cards-container flex">
+            <div class="special-cards-left flex">
+              <div class="special-box flex">
                 <h3 class="special-title">Мальдивские острова</h3>
                 <span class="special-paragraph"> от 55 000 ₽ </span>
                 <a class="btn-link special-btn" href="#"> Подробнее </a>
               </div>
 
-              <div class="special-box">
+              <div class="special-box flex">
                 <h3 class="special-title">Горящий тур на остров Крит</h3>
                 <span class="special-paragraph"> от 30 000 ₽ </span>
                 <a class="btn-link special-btn" href="#"> Подробнее </a>
@@ -78,7 +78,7 @@
             </div>
 
             <div class="special-cards-right">
-              <div class="special-box">
+              <div class="special-box special-box-right flex">
                 <h3 class="special-title special-title-big">
                   Номера категории люкс
                 </h3>
@@ -93,7 +93,7 @@
       </section>
 
       <!-- Секция О нас -->
-      <section id="about-us" class="about-us">
+      <section id="about-us" class="about-us container-offset">
         <div class="container">
           <h2 class="title">О нас</h2>
           <p class="text about-us-descr">
@@ -110,10 +110,10 @@
       </section>
 
       <!-- Секция услуги -->
-      <section id="services" class="services">
+      <section id="services" class="services container-offset">
         <div class="container">
           <h2 class="title">Услуги</h2>
-          <ul class="services-items">
+          <ul class="services-items list-reset flex">
             <li class="services-item">
               <article class="blog-preview">
                 <img
@@ -259,10 +259,10 @@
       </section>
 
       <!-- Секция преимущества -->
-      <section id="advantage" class="advantage">
+      <section id="advantage" class="advantage container-offset">
         <div class="container">
           <h2 class="title">Преимущества</h2>
-          <ul class="advantage-items">
+          <ul class="advantage-items list-reset flex">
             <li class="advantage-item">
               <!-- иконка 1 в разделе преимущество -->
               <svg
@@ -825,17 +825,17 @@
       </section>
 
       <!-- Секция размещение -->
-      <section id="accommodation" class="accommodation">
+      <section id="accommodation" class="accommodation container-offset">
         <div class="container">
           <h2 class="title">Размещение</h2>
-          <ul class="accommodation-items">
+          <ul class="accommodation-items list-reset flex">
             <!-- Карточка -->
             <li class="accommodation-item">
               <img src="./img/acc 1.png" alt="размещение" class="acc-img" />
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="ext-title-card">
                     <h4 class="acc-price">от 4 698 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-card-img">
@@ -848,7 +848,7 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text">Lagoona española</span>
+                  <span class="text acc-item-text">Lagoona española</span>
                   <span class="text acc-descr">Барселона, Испания</span>
                   <a class="btn acc-btn" href="">Номера</a>
                 </div>
@@ -860,8 +860,8 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
-                    <h4 class="acc-price">от 5 148 ₽ / ночь</h4>
+                  <div class="text-title-card">
+                    <h4 class="text acc-price">от 5 148 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
                     <img src="./img/star.svg" alt="" class="star-img" />
@@ -885,7 +885,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">от 6 254 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
@@ -898,7 +898,7 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text">Lagoona de la guerra</span>
+                  <span class="text acc-item-text">Lagoona de la guerra</span>
                   <span class="text acc-descr">Барселона, Испания</span>
                   <a class="btn acc-btn" href="">Номера</a>
                 </div>
@@ -910,7 +910,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">от 6 320 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
@@ -923,7 +923,9 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text">Lagoona mentira piadosa</span>
+                  <span class="text acc-item-text"
+                    >Lagoona mentira piadosa</span
+                  >
                   <span class="text acc-descr">Барселона, Испания</span>
                   <a class="btn acc-btn" href="">Номера</a>
                 </div>
@@ -935,7 +937,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">от 6 457 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
@@ -948,7 +950,7 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text"
+                  <span class="text acc-item-text"
                     >Lagoona empujar la creatividad</span
                   >
                   <span class="text acc-descr">Барселона, Испания</span>
@@ -962,7 +964,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">
                       от <strong>6 320 ₽</strong> / ночь
                     </h4>
@@ -977,7 +979,7 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text">Lagoona el retorno</span>
+                  <span class="text acc-item-text">Lagoona el retorno</span>
                   <span class="text acc-descr">Барселона, Испания</span>
                   <a class="btn acc-btn" href="">Номера</a>
                 </div>
@@ -989,7 +991,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">от 6 505 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
@@ -1002,7 +1004,9 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text">Lagoona mentira piadosa</span>
+                  <span class="text acc-item-text"
+                    >Lagoona mentira piadosa</span
+                  >
                   <span class="text acc-descr">Барселона, Испания</span>
                   <a class="btn acc-btn" href="">Номера</a>
                 </div>
@@ -1014,7 +1018,7 @@
               <div class="acc-container">
                 <!-- Тайтл карточки -->
                 <div class="title-card">
-                  <div class="text text-title-card">
+                  <div class="text-title-card">
                     <h4 class="acc-price">от 6 824 ₽ / ночь</h4>
                   </div>
                   <div class="lilte-img">
@@ -1027,7 +1031,7 @@
                 </div>
                 <!-- Описание -->
                 <div class="disc-card">
-                  <span class="acc-item-text"
+                  <span class="text acc-item-text"
                     >Lagoona suerte siguió siempre</span
                   >
                   <span class="text acc-descr">Барселона, Испания</span>
@@ -1037,7 +1041,6 @@
             </li>
             <li class="accommodation-item">
               <div class="acc-item">
-                <img src="./img/acc 9.png" alt="размещение" class="acc-img" />
                 <a class="btn-link btn-acc">Посмотреть все варианты</a>
               </div>
             </li>
@@ -1046,11 +1049,11 @@
       </section>
 
       <!-- Секция тур -->
-      <section id="tour" class="tour">
+      <section id="tour" class="tour container-offset">
         <div class="container">
           <h2 class="title title-tour">Хочу тур</h2>
 
-          <form class="tour-form">
+          <form class="tour-form flex">
             <div class="tour-form-container">
               <label class="tour-form-label">Город вылета</label>
               <select class="tour-select">
@@ -1091,11 +1094,11 @@
       </section>
 
       <!-- Секция контакты -->
-      <section id="contacts" class="contacts">
+      <section id="contacts" class="contacts container-offset">
         <div class="container">
           <h2 class="title">Контакты</h2>
 
-          <div class="white-container">
+          <div class="white-container flex">
             <div class="contacts-left">
               <div class="cont-item">
                 <div class="title-cont">
@@ -1163,7 +1166,7 @@
     <footer class="footer">
       <div class="container">
         <!-- Левый блок -->
-        <div class="black-container">
+        <div class="black-container flex">
           <div class="footer-left">
             <p class="text footer-text">
               © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
@@ -1208,7 +1211,7 @@
           </div>
 
           <!-- Правый блок -->
-          <div class="footer-right">
+          <div class="footer-right flex">
             <!-- ссылка на тревел -->
             <a class="footer-link" href="#">
               <svg
