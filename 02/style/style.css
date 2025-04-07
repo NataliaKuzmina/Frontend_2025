@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+  }
+
 html {
+    font-family: 'Montserrat' !important;
     box-sizing: border-box;
 }
 
@@ -13,14 +20,19 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     border: none;
 }
 
 body {
-    font-family: 'font' sans-serif;
+    /* font-family: 'font' sans-serif; */
     min-width: 1200px ;
+    /* height: 100vh; */
     background-color: rgb(239, 238, 237);
 }
 
@@ -33,10 +45,12 @@ body {
 }
 
 .btn {
-    padding: 0;
-    border: none;
+    padding: 13px 20px;
+    border: 2px solid #CC9933;
+    border-radius: 15px;
     background-color: transparent;
     cursor: pointer;
+    color: #CC9933;
 }
 
 .flex {
@@ -62,8 +76,13 @@ body {
     margin-bottom: 70px;
 }
 
+.header {
+    margin-top: 30px;
+}
+
 .header-top {
    margin: 30px 0;
+   margin-top: 0;
    align-items: center;
    justify-content: space-between;
    height: 54px;
@@ -114,6 +133,10 @@ body {
     align-items: center;
 }
 
+.btn-link {
+    color: #CC9933;
+}
+
 .special-cards-container {
     height: 540px;
     gap: 24px;
@@ -143,10 +166,28 @@ body {
 .special-box {
     flex-direction: column;
     height: 258px;
-    background-color: rgb(121, 121, 124);
+    /* background-color: rgb(121, 121, 124); */
     border-radius: 15px;
     padding: 40px 108px 40px 45px;
+    color: white;
+}
 
+.special-box-top-image {
+    background-image: url('../img/мальдивы.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.special-box-bottom-image {
+    background-image: url('../img/горячий\ тур.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.special-box-right {
+    background-image: url('../img/номера\ категории\ люкс.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .special-box:not(:last-child) {
@@ -186,8 +227,9 @@ body {
 }
 
 .about-us-descr {
-    width: 888px;
+    width: 80%;
     height: 192px;
+    line-height: 200%;
 }
 
 .services-items {
@@ -196,7 +238,10 @@ body {
 }
 
 .services-item {
-    flex-basis: 573px;
+    /* width: 573px; */
+    /* flex: 1; */
+    width: calc(50% - 12px);
+    /* flex-basis: 573px; */
     height: 330px;
     background-color: white;
     border-radius: 15px;
@@ -218,16 +263,15 @@ body {
     height: 276px;
     background-color: white;
     border-radius: 15px;
+    padding-left: 45px;
 }
 
 .advantage {
     margin-top: 40px;
-    margin-left: 45px;
 }
 
 .advantage-descr {
     margin-top: 10px;
-    margin-left: 45px;
     margin-right: 42px;
 }
 
@@ -244,9 +288,10 @@ body {
 }
 
 .acc-item {
-    background-color: azure;
+    background-image: url('../img/acc 9.png');
     flex-basis: 374px;
     height: 440px;
+    color: white;
 }
 
 .title-card {
@@ -258,6 +303,7 @@ body {
     flex-direction: column;
     margin-left: 45px;
 }
+
 
 .white-container {
     background-color: white;
