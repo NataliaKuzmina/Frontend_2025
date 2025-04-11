@@ -53,6 +53,10 @@ body {
     color: #CC9933;
 }
 
+.text {
+    font-size: 1em;
+}
+
 .flex {
     display: flex;
 }
@@ -135,6 +139,7 @@ body {
 
 .btn-link {
     color: #CC9933;
+    margin-right: 5px;
 }
 
 .special-cards-container {
@@ -248,6 +253,7 @@ body {
 
 }
 
+
 .blog-preview-text {
     margin: 26px 126px 35px 45px;
 }
@@ -292,16 +298,44 @@ body {
     flex-basis: 374px;
     height: 440px;
     color: white;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 27px;
 }
+
+/* .text-acc {
+    margin-bottom: 16px;
+} */
+
+.acc-btn {
+    margin-top: 20px;
+    padding: 13px 20px;
+    width: 33%;
+    border: 2px solid #CC9933;
+    border-radius: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #CC9933;
+}
+
+.btn-acc {
+    color: white;
+}
+
+/* .btn-acc {
+    color: white;
+} */
 
 .title-card {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 45px;
 }
 
 .disc-card {
     flex-direction: column;
-    margin-left: 45px;
+    padding-left: 45px;
+    gap: 16px;
 }
 
 
