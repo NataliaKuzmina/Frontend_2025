@@ -4,64 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
+      <div class="header-container flex">
         <div class="header-left">
           <a href="#" class="logo">
             <img src="./img/Logo.svg" class="logo-header" alt="Евклид" />
           </a>
         </div>
         <!-- навигация в хедере -->
-        <nav class="navigation">
-          <ul class="nav-link">
+        <nav class="navigation flex">
+          <ul class="nav-link flex">
             <li class="nav-link-item">О нас</li>
             <li class="nav-link-item">Этапы</li>
             <li class="nav-link-item">Вопросы</li>
             <li class="nav-link-item">Оставить заявку</li>
+            <li class="nav-link-item">
+              <button class="btn-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    width="7.56126"
+                    height="1.89031"
+                    transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
+                    fill="black"
+                  />
+                  <path
+                    d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </li>
           </ul>
-          <!-- кнопка поиск -->
-          <button class="btn-search">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <rect
-                width="7.56126"
-                height="1.89031"
-                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
-                fill="black"
-              />
-              <path
-                d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
-                stroke="black"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
         </nav>
       </div>
     </header>
 
     <main>
       <!-- Проектные решения -->
-      <section class="design-solutions container">
-        <div class="design-solutions-container">
-          <h1 class="title-high">Проектные решения любой сложности</h1>
-          <p>
-            Есть над чем задуматься: базовые сценарии поведения пользователей
-            и по сей день остаются уделом проектантов
-          </p>
-          <button class="btn btn-design-solutions">Заказать расчет</button>
+      <section class="design-solutions container margin-top">
+        <div class="container-img-bg">
+          <div class="design-solutions-container">
+            <h1 class="title-high">Проектные решения любой сложности</h1>
+            <p class="motto">
+              Есть над чем задуматься: базовые сценарии поведения пользователей
+              и по сей день остаются уделом проектантов
+            </p>
+            <button class="btn btn-design-solutions">Заказать расчет</button>
+          </div>
         </div>
       </section>
 
       <!-- О нас -->
-      <section class="about-us container">
+      <section class="about-us container margin-top">
         <div class="about-us-container">
           <!-- верхний блок -->
           <div class="container-top">
@@ -238,7 +243,38 @@
       </section>
 
       <!-- Вопросы -->
-      <section class="questions container"></section>
+      <section class="questions container">
+        <h2 class="title-middle">Вопросы</h2>
+        <div class="box-questions">
+          <div class="box-question-item">
+            <h3 class="title-little">
+              Из чего формируется конечная стоимость проекта?
+            </h3>
+            <p class="desc-text">
+              Приятно, граждане, наблюдать, как некоторые особенности внутренней
+              политики могут быть призваны к ответу.
+            </p>
+          </div>
+          <div class="box-question-item">
+            <h3 class="title-little">
+              У меня есть свой проект. Можно ли его реализовать?
+            </h3>
+            <p class="desc-text">
+              А ещё некоторые особенности внутренней политики, которые
+              представляют собой яркий пример континентального типа.
+            </p>
+          </div>
+          <div class="box-question-item">
+            <h3 class="title-little">
+              Я выбираю между разными компаниями. Почему вы?
+            </h3>
+            <p class="desc-text">
+              Явные признаки победы институционализации набирают популярность
+              среди определённых слоёв населения.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
