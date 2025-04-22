@@ -119,3 +119,50 @@ button {
     font-size: 24px;
 
 }
+
+.btn {
+    color: #FFFFFF;
+    background: #FF9900;
+    border-radius: 16px;
+}
+
+.btn-design-solutions {
+    padding: 25px 39px;
+    margin-top: 115px;
+
+}
+
+.title-middle {
+    margin: 0;
+    font-size: 48px;
+}
+
+.container-top {
+    max-width: 1235px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.container-botton {
+    margin-top: 50px;
+    gap: 32px;
+    flex-wrap: wrap;
+
+}
+
+.cont-bottom-left{
+    background-image: url('../img/rectangle.png');
+    min-height: 622px;
+
+}
+
+.container-botton {
+    width: 100%;
+}
+
+.cont-botton {
+    width: calc(50% - 16px)
+}
+
