@@ -26,7 +26,7 @@ h1 {
 
 p {
     margin: 0;
-
+    line-height: 32px;
 }
 
 img {
@@ -48,7 +48,7 @@ button {
 }
 
 .container {
-    max-width: 1770px;
+    max-width: 1772px;
     margin: 0 auto;
     /* background: rgb(138, 129, 146); */
     
@@ -145,24 +145,109 @@ button {
     font-size: 16px;
 }
 
-.container-botton {
+.container-bottom {
     margin-top: 50px;
     gap: 32px;
-    flex-wrap: wrap;
-
 }
 
-.cont-bottom-left{
+.cont-left{
     background-image: url('../img/rectangle.png');
     min-height: 622px;
+    background-repeat: no-repeat;
+}
+
+.text-white {
+    color: white;
+    max-width: 433px;
+}
+
+.btn-about-stages {
+    padding: 20px 38px;
+}
+
+.cont-bottom {
+    width: calc(50% - 16px);
+    flex-direction: column;
+    gap: 32px;
 
 }
 
-.container-botton {
-    width: 100%;
+.bg-black-half {
+    background-color: black;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 32px;
 }
 
-.cont-botton {
-    width: calc(50% - 16px)
+.cont-right {
+    height: calc(50% - 16px);
+    gap: 50px;
+    align-items: center;
+    border: #CACACA;
+    border-radius: 32px;
 }
 
+.title-little {
+    margin: 0;
+}
+
+.desc-text {
+    margin-top: 8px;
+}
+
+
+/* этапы */
+
+.stages-margin-top {
+    margin-top: 100px;
+}
+
+.stages-container {
+    margin-top: 32px;
+    padding-bottom: 85px;
+    gap: 32px;
+}
+
+.stages-cont {
+    /* max-width: calc(50% - 16px); */
+    flex: 1 1 calc(50% - 16px);
+}
+
+.buttons {
+    margin-top: 18px;
+    
+}
+
+.btn-contract {
+    color: black;
+    background: white;
+    border: 1px solid black;
+    padding: 20px 38px;
+    margin-left: 32px;
+}
+
+.desc-stages{
+    max-width: 758px;
+}
+
+/* Вопросы */
+.box-questions {
+    margin-top: 32px;
+    flex-wrap: wrap;
+    
+}
+
+.box-question-item {
+    padding: 65px 60px;
+    border: 1px solid black;
+    border-radius: 32px;
+    max-width: calc(33% - 11px);
+}
+
+.box-questions:not(:nth-child(3)) {
+    gap: 32px;
+}
+
+.cont-margin-top {
+   margin-top: 15px;
+}
