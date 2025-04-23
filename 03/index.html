@@ -9,44 +9,54 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container flex">
-        <div class="header-left">
-          <a href="#" class="logo">
-            <img src="./img/Logo.svg" class="logo-header" alt="Евклид" />
-          </a>
+      <div class="container">
+        <div class="header-container flex">
+          <div class="header-left">
+            <a href="#" class="logo">
+              <img src="./img/Logo.svg" class="logo-header" alt="Евклид" />
+            </a>
+          </div>
+          <!-- навигация в хедере -->
+          <nav class="navigation flex">
+            <ul class="nav-link flex">
+              <li class="nav-link-item">
+                <a href="#about-us"> О нас </a>
+              </li>
+              <li class="nav-link-item">
+                <a href="#stages"> Этапы </a>
+              </li>
+              <li class="nav-link-item">
+                <a href="#questions"> Вопросы </a>
+              </li>
+              <li class="nav-link-item">
+                <a href="#request"> Оставить заявку </a>
+              </li>
+              <li class="nav-link-item">
+                <button class="btn-search">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <rect
+                      width="7.56126"
+                      height="1.89031"
+                      transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
+                      fill="black"
+                    />
+                    <path
+                      d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- навигация в хедере -->
-        <nav class="navigation flex">
-          <ul class="nav-link flex">
-            <li class="nav-link-item">О нас</li>
-            <li class="nav-link-item">Этапы</li>
-            <li class="nav-link-item">Вопросы</li>
-            <li class="nav-link-item">Оставить заявку</li>
-            <li class="nav-link-item">
-              <button class="btn-search">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <rect
-                    width="7.56126"
-                    height="1.89031"
-                    transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
-                    fill="black"
-                  />
-                  <path
-                    d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -66,7 +76,7 @@
       </section>
 
       <!-- О нас -->
-      <section class="about-us container margin-top">
+      <section class="about-us container margin-top" id="about-us">
         <div class="about-us-container">
           <!-- верхний блок -->
           <h2 class="title-middle">О Нас</h2>
@@ -98,7 +108,7 @@
                   принципов
                 </div>
                 <div class="button">
-                  <button class="btn btn-about-stages">Подробнее</button>
+                  <button class="btn btn-about-us">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -206,36 +216,35 @@
       </section>
 
       <!-- Этапы -->
-      <section class="stages container">
+      <section class="stages container" id="stages">
         <div class="stages-margin-top">
           <h2 class="title-middle">Этапы</h2>
-          <div class="stages-container">
-            <div class="flex">
-              <!-- левая часть -->
-              <div class="stages-cont">
-                <div class="desc-stages">
-                  <h3 class="title-little">Проводим консультацию</h3>
-                  <p class="desc-text text">
-                    Влечёт за собой процесс внедрения и модернизации
-                    приоритизации разума над эмоциями. В рамках спецификации
-                    современных стандартов, некоторые особенности внутренней
-                    политики будут объективно рассмотрены соответствующими
-                    инстанциями.
-                    <br />А также представители современных социальных резервов,
-                    инициированные исключительно синтетически, ограничены
-                    исключительно образом мышления. Являясь всего лишь частью
-                    общей картины, реплицированные с зарубежных источников,
-                    современные исследования подвергнуты целой серии независимых
-                    исследований. Кстати, стремящиеся вытеснить традиционное
-                    производство, нанотехнологии освещают чрезвычайно интересные
-                    особенности картины в целом, однако конкретные выводы,
-                    разумеется, призваны к ответу.
-                  </p>
-                </div>
-                <div class="buttons">
-                  <button class="btn btn-about-stages">Подробнее</button>
-                  <button class="btn btn-contract">Договор</button>
-                </div>
+          <div class="stages-container flex">
+            <!-- левая часть -->
+            <div class="stages-cont">
+              <div class="desc-stages">
+                <h3 class="title-little">
+                  <b>Проводим консультацию</b>
+                </h3>
+                <p class="desc-text text">
+                  Влечёт за собой процесс внедрения и модернизации приоритизации
+                  разума над эмоциями. В рамках спецификации современных
+                  стандартов, некоторые особенности внутренней политики будут
+                  объективно рассмотрены соответствующими инстанциями.
+                  <br />А также представители современных социальных резервов,
+                  инициированные исключительно синтетически, ограничены
+                  исключительно образом мышления. Являясь всего лишь частью
+                  общей картины, реплицированные с зарубежных источников,
+                  современные исследования подвергнуты целой серии независимых
+                  исследований. Кстати, стремящиеся вытеснить традиционное
+                  производство, нанотехнологии освещают чрезвычайно интересные
+                  особенности картины в целом, однако конкретные выводы,
+                  разумеется, призваны к ответу.
+                </p>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-stages">Подробнее</button>
+                <button class="btn btn-contract">Договор</button>
               </div>
             </div>
 
@@ -248,7 +257,7 @@
       </section>
 
       <!-- Вопросы -->
-      <section class="questions container">
+      <section class="questions container" id="questions">
         <div class="cont-margin-top">
           <h2 class="title-middle">Вопросы</h2>
           <div class="box-questions flex">
@@ -285,7 +294,30 @@
     </main>
 
     <footer>
-      <section class="request"></section>
+      <section class="request" id="request">
+        <div class="container">
+          <div class="cont-black">
+            <div class="footer-box"></div>
+            <div class="footer-box">
+              <form action="">
+                <h2 class="title-middle">Оставить заявку</h2>
+                <input type="Фамилия, имя и отчество*" />
+                <input type="Email*" />
+                <input type="Сообщение" />
+              </form>
+              <button class="btn">Отправить данные</button>
+            </div>
+            <div class="footer-box">
+              <p class="desc-text">
+                Высокий уровень вовлечения представителей целевой аудитории
+                является чётким доказательством простого факта: разбавленное
+                изрядной долей эмпатии, рациональное мышление позволяет оценить
+                значение модели развития. Таким образом, консультация
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
