@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/media.css" />
   </head>
   <body>
     <header class="header">
@@ -13,7 +14,13 @@
         <div class="header-container flex">
           <div class="header-left">
             <a href="#" class="logo">
-              <img src="./img/Logo.svg" class="logo-header" alt="Евклид" />
+              <picture>
+                <source
+                  srcset="./img/logo-1024.svg"
+                  media="(max-width: 1264px)"
+                />
+                <img src="./img/Logo.svg" class="logo-header" alt="Евклид" />
+              </picture>
             </a>
           </div>
           <!-- навигация в хедере -->
@@ -31,30 +38,32 @@
               <li class="nav-link-item">
                 <a href="#request" class="header-nav-link"> Оставить заявку </a>
               </li>
-              <li class="nav-link-item">
-                <button class="btn-search">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <rect
-                      width="7.56126"
-                      height="1.89031"
-                      transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
-                      fill="black"
-                    />
-                    <path
-                      d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
-                      stroke="black"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </button>
-              </li>
+              <!-- <li class="nav-link-item"></li> -->
             </ul>
+
+            <div class="search">
+              <button class="btn-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    width="7.56126"
+                    height="1.89031"
+                    transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
+                    fill="black"
+                  />
+                  <path
+                    d="M10.9648 1C16.4852 1 20.9306 5.39189 20.9307 10.7725C20.9307 16.1531 16.4852 20.5449 10.9648 20.5449C5.44461 20.5448 1 16.153 1 10.7725C1.00008 5.39199 5.44466 1.00016 10.9648 1Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
           </nav>
         </div>
       </div>
@@ -103,9 +112,11 @@
             <div class="cont-bottom cont-left">
               <div class="bg-black-half flex">
                 <div class="desc-text text-white">
-                  Принимая во внимание показатели успешности, перспективное
-                  планирование способствует подготовке и реализации новых
-                  принципов
+                  <p class="desc-text text">
+                    Принимая во внимание показатели успешности, перспективное
+                    планирование способствует подготовке и реализации новых
+                    принципов
+                  </p>
                 </div>
                 <div class="button">
                   <button class="btn btn-about-us">Подробнее</button>

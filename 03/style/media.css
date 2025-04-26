@@ -1,0 +1,29 @@
+@media (max-width: 1264px) {
+  .header-container {
+    justify-content: space-between;
+  }
+  .container-bottom {
+    flex-wrap: wrap;
+  }
+
+  .cont-bottom {
+    width: 100%;
+
+  }
+
+  .cont-left {
+    background-image: url(../img/carpenter-man-1024.png);
+    /* min-height: 640px; */
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1px solid #CACACA;
+    border-radius: 32px;
+    max-width: 100%;
+
+  }
+
+  .cont-right {
+    padding: 60px 75px;
+  }
+}
+
