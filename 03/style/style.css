@@ -178,6 +178,8 @@ button {
     background-image: url('../img/rectangle.png');
     min-height: 622px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     border: 1px solid #CACACA;
     border-radius: 32px;
@@ -277,6 +279,11 @@ button {
 
 .desc-stages{
     max-width: 758px;
+}
+
+.img-stages {
+    /* background-repeat: no-repeat; */
+    background-position: center;
 }
 
 /* Вопросы */

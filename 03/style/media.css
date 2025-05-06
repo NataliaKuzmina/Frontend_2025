@@ -15,6 +15,8 @@
     background-image: url(../img/carpenter-man-1024.png);
     /* min-height: 640px; */
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     border: 1px solid #CACACA;
     border-radius: 32px;
